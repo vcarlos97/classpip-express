@@ -1,0 +1,51 @@
+:host ::ng-deep .mat-horizontal-stepper-header-container{
+    display: none;
+}
+.radio-group {
+    display: flex;
+    flex-direction: column;
+    margin: 15px 0;
+}
+  
+.radio-button {
+    margin: 5px;
+    color: black;
+}
+
+.button-empezar {
+    background-color: rgb(7, 214, 93);
+    color: white;
+    font-size: 18px;
+    padding: 20px;
+    border-radius: 20px;
+    /* Si no funciona al desplegar en el movil, lo hacemos asi
+    margin-top: 300px; */
+    /* position: absolute;
+    bottom: 35px;
+    right: 25px; */
+    margin-top: 175px; 
+}
+
+ion-slide {
+    height: 400px;
+    width: 200px;
+}
+  
+// esto es para que me ponga cada slide arriba
+ion-slide.swiper-slide {
+    align-items: flex-start;
+}
+
+// Esto es para que haga scroll vertical cuando no cabe la información
+// en el slide
+
+.swiper-slide {
+    overflow-y: scroll;    
+    display: block;    
+}
+ion-reorder{
+    position: absolute;
+    width: 100%;
+    max-width: 100%;
+    opacity: 0;
+}

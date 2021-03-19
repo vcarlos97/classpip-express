@@ -1,0 +1,27 @@
+
+<ion-content padding class="login-content-juego-rapido">
+  <div>
+
+
+    <div class="login-logo">
+      <img class="logo" width="100" height="100">
+    </div> 
+
+    <div class="login-credentials">
+      <ion-item lines="none">
+        <ion-input type="text" value="" name="nickname" placeholder="Nickname" requiered [(ngModel)]="nickname"></ion-input>
+        <img class="user-input-logo" width="21" height="21" slot="end">
+      </ion-item>
+      <ion-row style="height: 5px"></ion-row>
+
+      <ion-item lines="none">
+        <ion-input type="text" name="clave" placeholder="Clave" requiered [(ngModel)]="clave"></ion-input>
+        <img class="pass-input-logo" width="20" height="20" slot="end">
+      </ion-item>
+
+      <ion-button (click)="AutentificarJuegoRapido();" class="login-btn">JUEGO RÁPIDO
+      </ion-button>
+    </div> 
+    
+  </div>
+</ion-content>

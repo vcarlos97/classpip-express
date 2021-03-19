@@ -1,0 +1,20 @@
+page-home {
+  .selected-tag{
+      font-weight: bold;
+      font-size: 18px;
+  }
+  .selected{
+      font-size: 18px;
+  }
+
+  .btnContraseña:hover {
+    text-decoration:underline;
+    color: rgb(51, 122, 183) ;
+  }
+  .btnContraseña{
+    color: rgb(51, 122, 183);
+    width: auto;
+    background-color: transparent;
+    border: solid transparent;
+  }
+}

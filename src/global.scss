@@ -1,0 +1,1468 @@
+/*
+ * App Global CSS
+ * ----------------------------------------------------------------------------
+ * Put style rules here that you want to apply globally. These styles are for
+ * the entire app and not just one component. Additionally, this file can be
+ * used as an entry point to import other CSS/Sass files to be included in the
+ * output CSS.
+ * For more information on global stylesheets, visit the documentation:
+ * https://ionicframework.com/docs/layout/global-stylesheets
+ */
+
+/* Core CSS required for Ionic components to work properly */
+@import "~@ionic/angular/css/core.css";
+
+/* Basic CSS for apps built with Ionic */
+@import "~@ionic/angular/css/normalize.css";
+@import "~@ionic/angular/css/structure.css";
+@import "~@ionic/angular/css/typography.css";
+@import '~@ionic/angular/css/display.css';
+
+/* Optional CSS utils that can be commented out */
+@import "~@ionic/angular/css/padding.css";
+@import "~@ionic/angular/css/float-elements.css";
+@import "~@ionic/angular/css/text-alignment.css";
+@import "~@ionic/angular/css/text-transformation.css";
+@import "~@ionic/angular/css/flex-utils.css";
+
+
+
+/* AQUÍ VAN TODOS LOS ESTILOS QUE ENGLOBAN LA APLICACIÓN. PONEMOS A DISPOSICIÓN DEL 
+USUARIO 3 POSIBLES PLANTILLAS ENTRE LAS QUE ESCOGER */
+
+
+/* BOTONES PARA AVANZAR Y RETROCEDAR EN SLIDES Y STEPPERS */
+
+
+.siguiente {
+  background-color: rgb(11, 72, 100);
+  color: white;
+  font-size: 14px;
+  padding: 10px;
+  border-radius: 50px;
+  position: absolute;
+  right: 25px; 
+  width: 100px;
+  bottom: 10px;
+}
+
+
+.siguienteDisabled {
+  background-color: rgb(11, 72, 100);
+  color: white;
+  font-size: 14px;
+  padding: 10px;
+  border-radius: 50px;
+  position: absolute;
+  right: 25px; 
+  width: 100px;
+  bottom: 10px;
+  opacity: 0.5;
+}
+
+.anterior {
+  background-color: white;
+  color:rgb(11, 72, 100);
+  border: 2px solid rgb(11, 72, 100);
+  font-size: 14px;
+  padding: 10px;
+  border-radius: 50px;
+  position: absolute;
+  left: 25px; 
+  width: 100px;
+  bottom: 10px
+}
+/* BOTONES GENERALES */
+.ranking-btn {
+  margin-bottom: 10%; // Margin to some element put below
+  --margin-bottom: 90px; // we add -- to property because its a ionic button, not a normal button
+  --border-radius: 20px; // Rounded Borders
+  --background: cadetblue; // Background color
+  text-transform: none; // Avoid caps.
+}
+
+.ranking-btn-rojo {
+  margin-bottom: 10%; // Margin to some element put below
+  --margin-bottom: 90px; // we add -- to property because its a ionic button, not a normal button
+  --border-radius: 20px; // Rounded Borders
+  --background: rgb(153, 41, 65); // Background color
+  text-transform: none; // Avoid caps.
+}
+.ranking-btn-azul {
+  margin-bottom: 10%; // Margin to some element put below
+  --margin-bottom: 90px; // we add -- to property because its a ionic button, not a normal button
+  --border-radius: 20px; // Rounded Borders
+  --background: rgb(36, 40, 63); // Background color
+  text-transform: none; // Avoid caps.
+}
+
+
+/* ------------------------ESTILO 2---------------------------- */
+/* +++++++++++++++++++++++ 2.1 SLIDER ++++++++++++++++++++++++++*/
+
+.slider-content {
+  --overflow: hidden;
+  text-align: center;
+  .slider-slide {
+    display: block;
+    padding-top: 40px;
+  }
+  .slider-slide img{
+    position:relative;
+    margin-top: -60px;
+  }
+  h3 {
+    font-size: 15px;
+    font-weight: bold;
+    margin-top: 20px;
+    margin-bottom: 60px;
+    color: #17447eff;
+  }
+  .slider-bullets {
+    --bullet-background: #DC8B6BF7;
+    --bullet-background-active: #1A457DFF;
+  }
+  .slider-btn {
+    margin-top: 40px;
+    width: 180px;
+    --background: linear-gradient(to right, #000066 -50%, #ff9999 100%);
+  }
+}
+
+/* ++++++++++++++++++++++++ 2.2 LOG IN +++++++++++++++++++++++++++*/
+
+.login-content-juego-rapido {
+  --overflow: hidden;
+  --background: linear-gradient(to top right, #929e92 -20%, #042204 100%);
+  text-align: center;
+  
+  .login-logo {
+    position: absolute;
+    display: block;
+    top: 10%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+    margin-bottom: 25px;
+    .logo {
+      content: url('../src/assets/Login/login-logo-theme2.svg');
+    }
+  }
+
+  .login-credentials {
+    position: absolute;
+    display: block;
+    top: 60%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 75%;
+    color: #ffffff;
+    opacity: 0.9;
+    ion-item {
+      --border-radius: 20px;
+      --border-width: 2px;
+      --background: rgba(255, 255, 255, 0);
+      --border-color: rgb(255, 255, 255);
+    ion-input {
+        color: #ffffff;
+    }
+    ion-label {
+        color: #ffffff;
+    }
+    }
+  
+    .user-input-logo {
+      content: url('../src/assets/Login/login-usericon-theme2.svg');
+    }
+    .pass-input-logo {
+      content: url('../src/assets/Login/login-lockicon-theme2.svg');
+    }
+  }
+  
+  .login-btn {
+    margin-top: 40px;
+    width: 180px;
+    --border-radius: 20px;
+      --border-width: 2px;
+      --border-style: solid;
+      --background: #ffffff00;
+      --border-color: rgb(255, 255, 255);
+  }
+}
+
+.login-content-registro {
+  --overflow: hidden;
+  --background: linear-gradient(to top right, #aac2c5 -20%, #1e4449 100%);
+  text-align: center;
+  
+  .login-logo {
+    position: absolute;
+    display: block;
+    top: 10%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+    margin-bottom: 25px;
+    .logo {
+      content: url('../src/assets/Login/login-logo-theme2.svg');
+    }
+  }
+
+  .login-credentials {
+    position: absolute;
+    display: block;
+    top: 60%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 75%;
+    color: #ffffff;
+    opacity: 0.9;
+    ion-item {
+      --border-radius: 20px;
+      --border-width: 2px;
+      --background: rgba(255, 255, 255, 0);
+      --border-color: rgb(255, 255, 255);
+    ion-input {
+        color: #ffffff;
+    }
+    ion-label {
+        color: #ffffff;
+    }
+    }
+  
+    .user-input-logo {
+      content: url('../src/assets/Login/login-usericon-theme2.svg');
+    }
+    .pass-input-logo {
+      content: url('../src/assets/Login/login-lockicon-theme2.svg');
+    }
+  }
+  
+  .login-btn {
+    margin-top: 40px;
+    width: 180px;
+    --border-radius: 20px;
+      --border-width: 2px;
+      --border-style: solid;
+      --background: #ffffff00;
+      --border-color: rgb(255, 255, 255);
+  }
+}
+
+.login-content {
+  --overflow: hidden;
+  --background: linear-gradient(to top right, #000066 -20%, #ff9999 100%);
+  
+  text-align: center;
+  
+  .login-logo {
+    position: absolute;
+    display: block;
+    top: 10%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+    margin-bottom: 25px;
+    .logo {
+      content: url('../src/assets/Login/login-logo-theme2.svg');
+    }
+  }
+
+  .login-credentials {
+    position: absolute;
+    display: block;
+    top: 60%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 75%;
+    color: #ffffff;
+    opacity: 0.9;
+    ion-item {
+      --border-radius: 20px;
+      --border-width: 2px;
+      --background: rgba(255, 255, 255, 0);
+      --border-color: rgb(255, 255, 255);
+    ion-input {
+        color: #ffffff;
+    }
+    ion-label {
+        color: #ffffff;
+    }
+    }
+  
+    .user-input-logo {
+      content: url('../src/assets/Login/login-usericon-theme2.svg');
+    }
+    .pass-input-logo {
+      content: url('../src/assets/Login/login-lockicon-theme2.svg');
+    }
+  }
+  
+  .login-btn {
+    margin-top: 40px;
+    width: 180px;
+    --border-radius: 20px;
+      --border-width: 2px;
+      --border-style: solid;
+      --background: #ffffff00;
+      --border-color: rgb(255, 255, 255);
+  }
+}
+
+/* ++++++++++++++++++++++++ 2.3 JUEGOS +++++++++++++++++++++++++++*/
+
+.juegos-header {
+  text-align: justify;
+  background: #8b6f73bf;
+    .header-toolbar {
+      --background: #354f7bff;
+      color: white;
+    }
+    .menu-btn {
+      color: white;
+    }
+}
+
+.juegos-content {
+  --background: white;
+  text-align: center;
+  .juegos-card-bg {
+    margin-top: 20px;
+    max-height: fit-content;
+    text-align: center;
+    background: linear-gradient(to top right, #354f7bff -30%, #ff9999 100%);
+    width: 275px !important;
+    height: 500px !important;
+    margin-bottom: 15%;
+    h2 {
+      font-family: Arial, Helvetica, sans-serif;
+      font-size: 17px;
+      font-weight: bold;
+      color:#354f7bff;
+      margin-bottom: auto;
+    }
+    h3 {
+      font-family: Arial, Helvetica, sans-serif;
+      font-size: 14px;
+      font-weight: bold;
+      color: white;
+      margin-top: auto;
+    }
+    p {
+      font-family: Arial, Helvetica, sans-serif;
+      font-size: 12px;
+      color: white;
+      margin-top: auto;
+    }
+    .info-juego {
+      height: 30%;
+    }
+    .logo-btn {
+      height: 60%;
+      .card-img {
+        width: 80%;
+        margin: auto;
+      }
+      .card-btn {
+        --border-radius: 20px;
+        --border-width: 1px;
+        --border-style: solid;
+        --background: #ffffff75;
+        display: block;
+        width: 60%;
+        contain: content;
+        margin: auto;
+        margin-top: 10%;
+      }
+    }
+    ion-card{
+      display: flex;
+      flex-direction: column;
+      margin: 10 !important;
+    }
+  }
+}
+
+
+ion-tab-bar, ion-tab-button{
+  background-color: #f0926afb;
+}
+ ion-tab-bar, ion-icon{
+   color: white;
+}
+
+ .juegos-banner {
+  border-style: ridge;
+  text-align: center;
+  border-radius: 10px;
+}
+
+ /* ++++++++++++++++++++++++ 2.4 PERFIL +++++++++++++++++++++++++++*/
+
+ .perfil-header {
+  background: linear-gradient(to top, #000066 -50%, #ff9999 100%);
+  height: 200px;
+  padding-top: 1px;
+  h2 {
+    color: white;
+    font-size: 20px;
+    font-weight: bold;
+    text-align: center;
+  }
+}
+
+.perfil-pic {
+  display: flex;
+  justify-content: center;
+  margin-top: -76px;
+  .border-in {
+    border: 4px solid white;
+    border-radius: 50%;
+    width: fit-content;
+    background-color: white;
+  }
+  .border-out {
+    border: 4px solid #ff9999;
+    border-radius: 50%;
+    width: fit-content;
+  }
+  .img-box {
+    height: 130px;
+    width: 130px;
+    border-radius: 50%;
+    overflow: hidden;
+  }
+}
+
+ /* ++++++++++++++++++++++++ 2.5 PUNTOS +++++++++++++++++++++++++++*/
+
+ .puntos-content{
+  text-align: center;
+  #alumno-ranking {
+    overflow: auto;
+  }
+
+  .ranking-acordeon {
+    background: aquamarine;
+    width: 90%;
+    margin: auto;
+    margin-bottom: 3%;
+    .span{
+      display: flex;
+      align-items: center;
+    }
+    .mat-expansion-panel-header.mat-expanded {
+      background: cadetblue;
+      border-bottom-left-radius: 0px;
+      border-bottom-right-radius: 0px;
+      h2{
+        color: white;
+        font-size: 17px;
+      }
+      .avatar {
+        width: 50px;
+        height: 50px;
+        margin-right: 10px;
+        border: 2px solid;
+        border-color: greenyellow;
+      }
+    }
+    .mat-expansion-panel-content {
+      background: rgba(47, 79, 79, 0.4);
+      display: flex;
+      .mat-expansion-panel-body {
+        margin-top: 15px;
+      }
+    }
+    .avatar {
+      width: 40px;
+      height: 40px;
+      margin-right: 20px;
+      border: 2px solid;
+      border-color: white;
+    }
+  }
+  .puntos-list-bg {
+    background: transparent;
+    ion-item {
+      --background: transparent;
+      h2 {
+        font-size: 15px;
+        color: black;
+      }
+    }
+  }
+  .nivel-puntos {
+    display: flex;
+    justify-content: space-between;
+    h1 {
+      font-size: 15px;
+      margin: auto;
+      margin-bottom: -10px;
+      color: #354f7b;
+    }
+    p {
+      border: 3px solid;
+      border-color: #354f7b;
+      border-radius: 10px;
+      background: #354f7b;
+      color: white;
+    }
+  }
+  .info-alumno{
+    .logo {
+      margin-top: 10%;
+    }
+    h2 {
+      font-size: 15px;
+      color: #354f7bff;
+    }
+    h3 {
+      font-size: 44px;
+      background: darkseagreen;
+      color: white;
+    }
+  }
+
+  .info-equipo{
+    .logo {
+      margin-top: 10%;
+    }
+    h2 {
+      font-size: 15px;
+      color: #354f7bff;
+    }
+    h3 {
+      font-size: 44px;
+      background: darkseagreen;
+      color: white;
+    }
+    .alumnos-grupo {
+      display: flex;
+      margin: auto;
+      .alumno-image {
+        margin: auto;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        .border {
+          border: 3px solid lightpink;
+          border-radius: 50%;
+          width: fit-content;
+          background-color: bisque;
+          .img-box {
+            height: 50px;
+            width: 50px;
+            border-radius: 50%;
+            overflow: hidden;
+          }
+        }
+        p {
+          color: #354f7b;
+          font-weight: bold;
+        }
+        .muestra-puntos-equ{
+          p{
+            color: white;
+          }
+        }
+        .border-conectado {
+          border: 3px solid rgb(64, 98, 155);
+          border-radius: 50%;
+          width: fit-content;
+          background-color: lightblue;
+          .img-box {
+            height: 50px;
+            width: 50px;
+            border-radius: 50%;
+            overflow: hidden;
+          }
+        }
+      }
+    }
+  }
+  .tabla-puntos {
+    .cabecera-tabla {
+      background: #17447eff;
+      color: white;
+      border-top-right-radius: 17px;
+      border-top-left-radius: 17px;
+    }
+    .casillas-tabla {
+        color: #17447eff;
+        border-left: thin solid;
+        border-right: thin solid;
+        border-bottom: thin solid;
+        border-left-color: #17447eff;
+        border-right-color: #17447eff;
+        border-bottom-color: #17447eff;
+        h1 {
+          margin: auto;
+          font-size: 15px;
+        }
+      }
+  }
+  .puntos-info {
+    position: fixed;
+    bottom: 0;
+    height: 70px;
+    width: 100%;
+    padding-top: 20px;
+    background: linear-gradient(to top, #000066 -50%, #ff9999 100%);
+    transition: all 1s;
+    border-radius: 85% 85% 0 0 / 30%;
+    p {
+      color:white;
+    }
+  
+    &.active {
+      height: calc(100% - 100px);
+    }
+  
+    .toggle-text {
+      color: white;
+      font-size: 15px;
+    }
+
+    .info-segment{
+      margin: auto;
+      width: 70%;
+      .btn-segment{
+        color: white;
+      }
+    }
+  
+    .infopuntos {
+      margin-top: 5%;
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
+      width: 80%;
+      p{
+        color: black;
+        font-size: 12px;
+      }
+      h1{
+        color: white;
+        font-size: 14px;
+      }
+      img {
+        width: 100px;
+        margin-top: 20px;
+      }
+    }
+  }
+  #informacion{
+    overflow: hidden;
+  }
+
+ }
+
+ /* ++++++++++++++++++++++++ 2.6 MENU-LATERAL +++++++++++++++++++++++++++*/
+
+ .sidemenu-content {
+  --background: linear-gradient(to top, #000066 -50%, #ff9999 100%);
+  text-align: center;
+  p {
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+    font-weight: bold;
+  }
+  .user-image {
+    display: flex;
+    justify-content: center;
+    margin-top: 120px;
+    h2 {
+      color: white;
+      font-size: 20px;
+      font-weight: bold;
+      text-align: center;
+    }
+      .border {
+        border: 4px solid white;
+        border-radius: 50%;
+        width: fit-content;
+        background-color: white;
+        .img-box {
+          height: 100px;
+          width: 100px;
+          border-radius: 50%;
+          overflow: hidden;
+        }
+      }
+  }
+  
+  .sidemenu-items {
+    --background: transparent;
+    font-size: 15px;
+    font-weight: bold;
+    color: white;
+  }
+}
+
+ /* ++++++++++++++++++++++++ 2.7 JUEGO COLECCION +++++++++++++++++++++++++++*/
+ .juegocoleccion-content {
+  --background: #fffafaff;
+  text-align: center;
+  /* entire container, keeps perspective */
+    .logo-liga {
+      margin-top: 10%;
+    }
+    h2 {
+      font-size: 14px;
+      color: #354f7bff;
+      margin-top: -8px;
+    }
+    .card-cromo {
+      width: 312px;
+      height: 450px;
+      background: mediumspringgreen;
+      border-radius: 10px;
+      img {
+        width: 100%;
+        height: 100%;
+      }
+      p {
+        font-size: 12px;
+      }
+    }
+    .card-cromo-reves {
+      width: 312px;
+      height: 450px;
+      background-color: mediumspringgreen;
+      border-radius: 10px;
+      img {
+        width: 100%;
+        height: 100%;
+      }
+    }
+    .MeFalta-bg {
+      width: 312px;
+      height: 450px;
+      background: lightgrey;
+      border-radius: 10px;
+      img {
+        width: 100%;
+        height: 100%;
+        opacity: 0.3;
+      }
+      p {
+        font-size: 12px;
+      }
+    }
+    .falta-cromo-reves {
+      width: 312px;
+      height: 450px;
+      background-color: lightgrey;
+      border-radius: 10px;
+    }
+    .cofre-icono {
+      margin-top: 10%;
+      width: 70px;
+      margin: auto;
+      margin-bottom: 30%;
+      margin-top: 10%;
+    }
+    #box {
+      width: 90%;
+      position: relative;
+      margin: auto;
+    }
+    .ranking-acordeon {
+      background: aquamarine;
+      margin: auto;
+      margin-bottom: 3%;
+      width: 100%;
+      .span{
+        display: flex;
+        align-items: center;
+      }
+      .mat-expansion-panel-header.mat-expanded {
+        background: cadetblue;
+        border-bottom-left-radius: 0px;
+        border-bottom-right-radius: 0px;
+        h2{
+          color: white;
+          font-size: 17px;
+        }
+        .avatar {
+          width: 50px;
+          height: 50px;
+          margin-right: 10px;
+          border: 2px solid;
+          border-color: greenyellow;
+        }
+      }
+      .mat-expansion-panel-content {
+        background: rgba(47, 79, 79, 0.4);
+        display: flex;
+        .mat-expansion-panel-body {
+          margin-top: 15px;
+        }
+      }
+      .avatar {
+        width: 40px;
+        height: 40px;
+        margin-right: 20px;
+        border: 2px solid;
+        border-color: white;
+      }
+    }
+    .opciones-ranking {
+      display: flex;
+    }
+    .ranking-alumno-btn {
+      width: 200px;
+      text-transform: initial;
+    }
+    // para mostrar los alumnos de cada grupo
+    .alumnos-grupo {
+      display: flex;
+      margin: auto;
+      .alumno-image {
+        margin: auto;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        .border {
+          border: 3px solid lightpink;
+          border-radius: 50%;
+          width: fit-content;
+          background-color: bisque;
+          .img-box {
+            height: 50px;
+            width: 50px;
+            border-radius: 50%;
+            overflow: hidden;
+          }
+        }
+        p {
+          color: #354f7b;
+          font-weight: bold;
+        }
+        .border-conectado {
+            border: 3px solid rgb(64, 98, 155);
+            border-radius: 50%;
+            width: fit-content;
+            background-color: lightblue;
+          .img-box {
+            height: 50px;
+            width: 50px;
+            border-radius: 50%;
+            overflow: hidden;
+          }
+        }
+      }
+    }
+    .coleccion-equipo {
+      margin-bottom: 15%;
+      h2 {
+        font-size: 15px;
+        color: #354f7bff;
+      }
+    }
+  }
+
+  .flip-card-container {
+    width: 468px;
+    height: 675px;
+    margin-top: 15%;
+    margin-bottom: 15%;
+  }
+
+  /* Esta és la parte css del efecto flip para los cromos */
+  .flip-card {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    transition: transform 1.5s; // time duration of the flip
+    transform-style: preserve-3d; // Specifies that child elements will preserve its 3D position
+  }
+  .flip-card-container:hover .flip-card {
+    transform: rotateY(180deg);
+  }
+  /* Position the front and back side */
+  .flip-card-front, .flip-card-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    -webkit-backface-visibility: hidden; /* Safari */
+    backface-visibility: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .flip-card-front {
+    background-color: transparent;
+    color: #fff;
+  }
+  .flip-card-back {
+    background-color: transparent;
+    color: #fff;
+    transform: rotateY(180deg);
+    width: 100%;
+    height: 100%;
+    .card-content-md {
+      padding-left: unset;
+      padding-right: unset;
+      -webkit-padding-start: unset; 
+      padding-inline-start: unset; 
+      -webkit-padding-end: unset; 
+      padding-inline-end: unset; 
+      padding-left: 0px;
+      padding-right: 0px;
+      padding-top: 0px; 
+      padding-bottom: 0px; 
+    }
+  }
+
+/* ++++++++++++++++++++++++ 2.8 CAMBIAR CROMOS +++++++++++++++++++++++++++*/
+
+.intercambiarcromos-content {
+  text-align: center;
+}
+
+/* +++++++++++++++++++++++++ 2.9 JUEGO COMPELIGA +++++++++++++++++++++++++ */
+
+.juegocompliga-content {
+  --background: #fffafaff;
+  text-align: center;
+
+  .info-alumno{
+    .logo-liga {
+      margin-top: 10%;
+    }
+    h2 {
+      font-size: 15px;
+    }
+    h3 {
+      font-size: 44px;
+      background: darkseagreen;
+      color: white;
+    }
+    .puntos-list-bg {
+      background: transparent;
+      ion-item {
+        --background: transparent;
+        h2 {
+          font-size: 15px;
+          color: black;
+        }
+      }
+    }
+  }
+  .info-equipo{
+    .logo {
+      margin-top: 10%;
+    }
+    h2 {
+      font-size: 15px;
+      color: #354f7bff;
+    }
+    h3 {
+      font-size: 44px;
+      background: darkseagreen;
+      color: white;
+    }
+    .alumnos-grupo {
+      display: flex;
+      margin: auto;
+      .alumno-image {
+        margin: auto;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        .border {
+          border: 3px solid lightpink;
+          border-radius: 50%;
+          width: fit-content;
+          background-color: bisque;
+          .img-box {
+            height: 50px;
+            width: 50px;
+            border-radius: 50%;
+            overflow: hidden;
+          }
+        }
+        p {
+          color: #354f7b;
+          font-weight: bold;
+        }
+        .muestra-puntos-equ{
+          p{
+            color: white;
+          }
+        }
+        .border-conectado {
+          border: 3px solid rgb(64, 98, 155);
+          border-radius: 50%;
+          width: fit-content;
+          background-color: lightblue;
+          .img-box {
+            height: 50px;
+            width: 50px;
+            border-radius: 50%;
+            overflow: hidden;
+          }
+        }
+      }
+    }
+  }
+  .ranking-acordeon {
+    background: aquamarine;
+    width: 90%;
+    margin: auto;
+    margin-bottom: 3%;
+    .span{
+      display: flex;
+      align-items: center;
+      h2 {
+        font-size: 15px;
+        color: #354f7bff;
+      }
+    }
+    .mat-expansion-panel-header.mat-expanded {
+      background: cadetblue;
+      border-bottom-left-radius: 0px;
+      border-bottom-right-radius: 0px;
+      h2{
+        color: white;
+        font-size: 17px;
+      }
+      .avatar {
+        width: 50px;
+        height: 50px;
+        margin-right: 10px;
+        border: 2px solid;
+        border-color: greenyellow;
+      }
+    }
+    .mat-expansion-panel-content {
+      background: rgba(47, 79, 79, 0.4);
+      display: flex;
+      .mat-expansion-panel-body {
+        margin-top: 15px;
+      }
+    }
+    .avatar {
+      width: 40px;
+      height: 40px;
+      margin-right: 20px;
+      border: 2px solid;
+      border-color: white;
+    }
+  }
+  .puntos-list-bg-acordeon{
+    background: white;
+    border-radius: 25px;
+    color: #354f7bff;
+    h2 {
+      font-size: 15px;
+      color: black;
+    }
+  }
+}
+
+/* +++++++++++++++++++++++++++++++ JUEGO  F 1 +++++++++++++++++++++++++++++*/
+.juegocompf1-content {
+  --background: #fffafaff;
+  text-align: center;
+  .info-alumno{
+    .logo {
+      margin-top: 10%;
+    }
+    h2 {
+      font-size: 15px;
+    }
+    h3 {
+      font-size: 44px;
+      background: darkseagreen;
+      color: white;
+    }
+  }
+  .info-equipo{
+    .logo {
+      margin-top: 10%;
+    }
+    h2 {
+      font-size: 15px;
+      color: #354f7bff;
+    }
+    h3 {
+      font-size: 44px;
+      background: darkseagreen;
+      color: white;
+    }
+    .alumnos-grupo {
+      display: flex;
+      margin: auto;
+      .alumno-image {
+        margin: auto;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        .border {
+          border: 3px solid lightpink;
+          border-radius: 50%;
+          width: fit-content;
+          background-color: bisque;
+          .img-box {
+            height: 50px;
+            width: 50px;
+            border-radius: 50%;
+            overflow: hidden;
+          }
+        }
+        p {
+          color: #354f7b;
+          font-weight: bold;
+        }
+        .muestra-puntos-equ{
+          p{
+            color: white;
+          }
+        }
+        .border-conectado {
+          border: 3px solid rgb(64, 98, 155);
+          border-radius: 50%;
+          width: fit-content;
+          background-color: lightblue;
+          .img-box {
+            height: 50px;
+            width: 50px;
+            border-radius: 50%;
+            overflow: hidden;
+          }
+        }
+      }
+    }
+  }
+  .ranking-acordeon {
+    background: aquamarine;
+    width: 90%;
+    margin: auto;
+    margin-bottom: 3%;
+    .span{
+      display: flex;
+      align-items: center;
+      h2 {
+        font-size: 15px;
+        color: #354f7bff;
+      }
+    }
+    .mat-expansion-panel-header.mat-expanded {
+      background: cadetblue;
+      border-bottom-left-radius: 0px;
+      border-bottom-right-radius: 0px;
+      h2{
+        color: white;
+        font-size: 17px;
+      }
+      .avatar {
+        width: 50px;
+        height: 50px;
+        margin-right: 10px;
+        border: 2px solid;
+        border-color: greenyellow;
+      }
+    }
+    .mat-expansion-panel-content {
+      background: rgba(47, 79, 79, 0.4);
+      display: flex;
+      .mat-expansion-panel-body {
+        margin-top: 15px;
+      }
+    }
+    .avatar {
+      width: 40px;
+      height: 40px;
+      margin-right: 20px;
+      border: 2px solid;
+      border-color: white;
+    }
+  }
+  .nivel-puntos {
+    display: flex;
+    justify-content: space-between;
+    h1 {
+      font-size: 15px;
+      margin: auto;
+      margin-bottom: -10px;
+      color: #354f7b;
+    }
+    p {
+      border: 3px solid;
+      border-color: #354f7b;
+      border-radius: 10px;
+      background: #354f7b;
+      color: white;
+    }
+  }
+      // para mostrar los alumnos de cada grupo
+          
+}
+/* +++++++++++++++++++++++++ 2.10 INFOR JORNADAS +++++++++++++++++++++++++ */
+.infojornadas-content {
+  text-align: center;
+  .logo-liga{
+    margin-top: 10%;
+  }
+  p {
+    color: #354f7b;
+    font-weight: bold;
+  }
+  .ranking-acordeon {
+    background: aquamarine;
+    width: 100%;
+    margin: auto;
+    margin-bottom: 3%;
+    .span{
+      display: flex;
+      align-items: center;
+      .icono-jornada {
+        width: 14%;
+        margin-right: 2%;
+      }
+      h2 {
+        font-size: 15px;
+        color: #354f7bff;
+      }
+    }
+    .mat-expansion-panel-header.mat-expanded {
+      background: cadetblue;
+      border-bottom-left-radius: 0px;
+      border-bottom-right-radius: 0px;
+      .icono-jornada {
+        width: 16%;
+        margin-right: 2%;
+      }
+      h2{
+        color: white;
+        font-size: 17px;
+      }
+    }
+    .mat-expansion-panel-content {
+      //background: rgba(47, 79, 79, 0.4);
+      background: white;
+      display: flex;
+      .mat-expansion-panel-body {
+        margin-top: 15px;
+      }
+    }
+  }
+  .enfrentamiento-card-mialumno {
+    border: solid;
+    border-width: 10px;
+    border-color: white;
+    max-height: fit-content;
+    text-align: center;
+    background: aquamarine;
+    width: 177px !important;
+    height: 300px !important;
+    margin-top: 0px;
+    .card-title {
+      font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+      font-size: 15px;
+    }
+    .versus-icon {
+      width: 90px;
+      display: unset;
+      margin-bottom: -15px;
+      margin-top: -10px;
+    }
+    h2 {
+      font-size: 16px;
+      color: rgb(117, 134, 83);
+    }
+    h3 {
+      font-size: 14px;
+      color: black;
+    }
+    p{
+      color: rgba(59, 85, 129, 0.664);
+    }
+  }
+  .enfrentamiento-card {
+    max-height: fit-content;
+    text-align: center;
+    background: turquoise;
+    width: 177px !important;
+    height: 300px !important;
+    .card-title {
+      font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+      font-size: 15px;
+    }
+    .versus-icon {
+      width: 90px;
+      display: unset;
+      margin-bottom: -15px;
+      margin-top: -10px;
+    }
+    h2 {
+      font-size: 16px;
+      color: #354f7b;
+    }
+    h3 {
+      font-size: 14px;
+      color: black;
+    }
+    p{
+      color: black;
+    }
+  }
+  .marco-ganadores {
+    background: url('../src/assets/img/primerof1.svg');
+  }
+}
+
+
+/* +++++++++++++++++++++++++ 2.11 JUEGO-AVATAR +++++++++++++++++++++++++++++ */
+.juegoavatar-content {
+  --background: #fffafaff;
+  text-align: center;
+  .logo {
+      margin-top: 10%;      }
+  h2 {
+      font-size: 15px;
+  }
+  p {
+      font-size: 13px;
+  }
+  .icono-privilegio {
+      width: 45px;
+      margin-right: 5%;
+  }
+  .privilegios-btn{
+      width: 90%;
+      margin: auto;
+      background: linear-gradient(to top right, #008b8b 2%, #dccfcf 100%);
+      .cabecera-privilegios {
+          background: #329a9a;
+          color: black;
+          border-bottom: 2px solid #cac9c9;
+          h2{
+           margin: auto;   
+          }
+      }
+      
+      .privilegio-activo {
+          --background: lightgreen;
+      }
+      .privilegio-inactivo {
+          --background: lightgrey;
+      }
+  }
+
+}
+/* +++++++++++++++++++++++++ 2.12 EDITOR-AVATAR +++++++++++++++++++++++++++++ */
+.editoravatar-content {
+  --background: #fffafaff;
+  text-align: center;
+  .logo {
+      margin-top: 10%;
+    }
+  p {
+      font-size: 13px;
+  }
+  .icono-familia {
+    width: 45px;
+    margin-right: 5%;
+  }
+  .complementos-segmento {
+    div {
+      display: -webkit-box;
+      margin-top: 0px;
+      margin-right: 10px;
+    }
+    img {
+      width: 60px;
+      height: 60px;
+    }
+  }
+  .elementos-complemento {
+    margin-top: 5px;
+    margin-right: 10px;
+    .elemento-card {
+      width: 100px;
+      height: 118.8px;
+      img {
+        width: 100%;
+        height: 100%;
+      }
+    }
+  }
+}
+
+/* ------------------------ESTILO 4---------------------------- */
+
+/* .slider-bullets {
+  --bullet-background: grey;
+  --bullet-background-active: #8890B2;
+} 
+
+h3 {
+  color: #17447eff;
+} 
+*/
+
+/* .login-content {
+  --overflow: hidden;
+  --background: url('../src/assets/Login/login-bg-theme4.svg') no-repeat center center / cover;
+  text-align: center;
+} 
+
+.login-logo {
+  position: absolute;
+  top: 30%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 100%;
+  margin-bottom: 25px;
+  .logo {
+    content: url('../src/assets/Login/login-logo-theme4.svg');
+  }
+}
+
+.login-credentials {
+  position: absolute;
+  display: block;
+  top: 65%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 65%;
+  color: #000000;
+  opacity: 0.9;
+  ion-item {
+    --border-radius: 2px;
+    --border-width: 1px;
+    --background: rgba(255, 255, 255, 0);
+    --border-color: rgb(0, 0, 0);
+  ion-input {
+      color: rgb(88, 80, 80);
+  }
+  ion-label {
+      color: rgb(88, 80, 80);
+  }
+  }
+
+  .user-input-logo {
+    content: url('../src/assets/Login/login-usericon-theme4.svg');
+  }
+  .pass-input-logo {
+    content: url('../src/assets/Login/login-lockicon-theme4.svg');
+  }
+}
+
+.login-btn {
+  margin-top: 40px;
+  width: 180px;
+  color: black;
+  font-weight: bold;
+  --border-radius: 20px;
+  --border-width: 2px;
+  --border-style: solid;
+  --background: #4fde87ae;
+  --background-hover: #7eec96;
+  --border-color: white;
+} */
+
