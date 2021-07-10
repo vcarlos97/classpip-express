@@ -1,9 +1,9 @@
-import { Injectable } from '@angular/core';
-import { Alumno, Juego } from '../clases';
-import { ReplaySubject } from 'rxjs';
+import { Injectable } from "@angular/core";
+import { Alumno, Juego } from "../clases";
+import { ReplaySubject } from "rxjs";
 
 @Injectable({
-  providedIn: 'root'
+	providedIn: "root"
 })
 export class SesionService {
 
@@ -15,30 +15,30 @@ export class SesionService {
   constructor() { }
   
   public DameAlumno(): Alumno {
-    return this.alumno;
+  	return this.alumno;
   }
   public TomaNickName(nick: string) {
-    this.nickName = nick;
+  	this.nickName = nick;
   }
 
   public DameNickName(): string {
-    return this.nickName;
+  	return this.nickName;
   }
 
   public TomaJuego(juego: Juego) {
-    this.juego = juego;
+  	this.juego = juego;
   }
 
   public DameJuego(): Juego {
-    return this.juego;
+  	return this.juego;
   }
   public EnviameAlumno(): any {
-    return this.alumnoObservable;
+  	return this.alumnoObservable;
   }
 
   public TomaAlumno(alumno: Alumno) {
-    this.alumno = alumno;
-    this.alumnoObservable.next(alumno);
+  	this.alumno = alumno;
+  	this.alumnoObservable.next(alumno);
   }
 }
 

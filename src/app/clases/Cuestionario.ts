@@ -5,7 +5,7 @@ export class Cuestionario {
     id: number;
 
     constructor(titulo?: string, descripcion?: string){
-        this.Titulo = titulo;
-        this.Descripcion = descripcion;
+    	this.Titulo = titulo;
+    	this.Descripcion = descripcion;
     }
 }

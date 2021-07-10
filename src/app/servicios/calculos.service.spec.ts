@@ -1,12 +1,12 @@
-import { TestBed } from '@angular/core/testing';
+import { TestBed } from "@angular/core/testing";
 
-import { CalculosService } from './calculos.service';
+import { CalculosService } from "./calculos.service";
 
-describe('CalculosService', () => {
-  beforeEach(() => TestBed.configureTestingModule({}));
+describe("CalculosService", () => {
+	beforeEach(() => TestBed.configureTestingModule({}));
 
-  it('should be created', () => {
-    const service: CalculosService = TestBed.get(CalculosService);
-    expect(service).toBeTruthy();
-  });
+	it("should be created", () => {
+		const service: CalculosService = TestBed.get(CalculosService);
+		expect(service).toBeTruthy();
+	});
 });

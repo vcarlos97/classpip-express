@@ -11,9 +11,9 @@ export class AlumnoJuegoDeCuestionarioSatisfaccion {
 
 
   constructor(Contestado?: boolean, juegoDeCuestionarioId?: number, alumnoId?: number) {
-      this.Contestado = Contestado;
-      this.alumnoId = alumnoId;
-      this.juegoDeCuestionarioSatisfaccionId = juegoDeCuestionarioId;
+  	this.Contestado = Contestado;
+  	this.alumnoId = alumnoId;
+  	this.juegoDeCuestionarioSatisfaccionId = juegoDeCuestionarioId;
   }
 }
 

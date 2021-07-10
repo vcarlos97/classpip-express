@@ -1,14 +1,14 @@
-import { Component } from '@angular/core';
-import { NavController } from '@ionic/angular';
-import { Platform } from '@ionic/angular';
-import { SplashScreen } from '@ionic-native/splash-screen/ngx';
-import { StatusBar } from '@ionic-native/status-bar/ngx';
-import { Router } from '@angular/router';
+import { Component } from "@angular/core";
+import { NavController } from "@ionic/angular";
+import { Platform } from "@ionic/angular";
+import { SplashScreen } from "@ionic-native/splash-screen/ngx";
+import { StatusBar } from "@ionic-native/status-bar/ngx";
+import { Router } from "@angular/router";
 
 @Component({
-  selector: 'app-root',
-  templateUrl: 'app.component.html',
-  styleUrls: ['app.component.scss']
+	selector: "app-root",
+	templateUrl: "app.component.html",
+	styleUrls: ["app.component.scss"]
 })
 export class AppComponent {
 
@@ -21,17 +21,17 @@ export class AppComponent {
     private splashScreen: SplashScreen,
     private statusBar: StatusBar
   ) {
-    this.initializeApp();
+  	this.initializeApp();
   }
 
   initializeApp() {
-    this.platform.ready().then(() => {
-      this.statusBar.styleDefault();
-      this.splashScreen.hide();
-    });
+  	this.platform.ready().then(() => {
+  		this.statusBar.styleDefault();
+  		this.splashScreen.hide();
+  	});
   }
 
   GoOut() {
-    this.route.navigateByUrl('/home');
+  	this.route.navigateByUrl("/home");
   }
 }

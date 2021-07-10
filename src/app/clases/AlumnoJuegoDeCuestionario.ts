@@ -9,10 +9,10 @@ export class AlumnoJuegoDeCuestionario {
 
 
     constructor(Nota?: number, Contestado?: boolean, juegoDeCuestionarioId?: number, alumnoId?: number, TiempoEmpleado?: number) {
-        this.Nota = Nota;
-        this.Contestado = Contestado;
-        this.alumnoId = alumnoId;
-        this.juegoDeCuestionarioId = juegoDeCuestionarioId;
-        this.TiempoEmpleado = TiempoEmpleado;
+    	this.Nota = Nota;
+    	this.Contestado = Contestado;
+    	this.alumnoId = alumnoId;
+    	this.juegoDeCuestionarioId = juegoDeCuestionarioId;
+    	this.TiempoEmpleado = TiempoEmpleado;
     }
 }
