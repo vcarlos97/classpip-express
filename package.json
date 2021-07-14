@@ -8,9 +8,9 @@
     "start": "ng serve",
     "build": "ng build",
     "test": "ng test",
-    "lint": "eslint .",
-    "lint-fix": "eslint . --fix",
-    "format": "npx prettier --write .",
+    "lint": "eslint src/app",
+    "lint-fix": "eslint src/app --fix",
+    "format": "npx prettier --write src/app",
     "e2e": "ng e2e",
     "ionic": "ionic serve"
   },
@@ -88,7 +88,7 @@
     "eslint-plugin-prettier": "^3.4.0",
     "jasmine-core": "~3.4.0",
     "jasmine-spec-reporter": "~4.2.1",
-    "prettier": "2.3.2",
+    "prettier": "^2.3.2",
     "ts-node": "~7.0.0",
     "tslint": "~5.15.0",
     "typescript": "~3.4.3"

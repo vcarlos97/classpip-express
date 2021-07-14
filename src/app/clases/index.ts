@@ -7,6 +7,3 @@ export * from "./CuestionarioSatisfaccion";
 export * from "./TablaAlumnoJuegoDeCuestionario";
 export * from "./Juego";
 export * from "./JuegoDeEncuestaRapida";
-
-
-

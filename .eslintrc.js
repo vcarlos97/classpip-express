@@ -6,7 +6,9 @@ module.exports = {
 	},
 	"extends": [
 		"eslint:recommended",
-		"plugin:@typescript-eslint/recommended"
+		"plugin:@typescript-eslint/recommended",
+		"prettier",
+		"plugin:prettier/recommended"
 	],
 	"parser": "@typescript-eslint/parser",
 	"parserOptions": {
@@ -14,24 +16,29 @@ module.exports = {
 		"sourceType": "module"
 	},
 	"plugins": [
-		"@typescript-eslint"
+		"prettier"
 	],
 	"rules": {
-		"indent": [
-			"error",
-			"tab"
-		],
-		"linebreak-style": [
-			"error",
-			"windows"
-		],
-		"quotes": [
-			"error",
-			"double"
-		],
-		"semi": [
-			"error",
-			"always"
-		]
+		// "indent": [
+		// 	"error",
+		// 	"tab"
+		// ],
+		// "linebreak-style": [
+		// 	"error",
+		// 	"windows"
+		// ],
+		// "quotes": [
+		// 	"error",
+		// 	"double"
+		// ],
+		// "semi": [
+		// 	"error",
+		// 	"always"  
+		// ],
+		// "eol-last": [
+		// 	"error",
+		// 	"always"
+		// ],
+	"prettier/prettier": "error"
 	}
 };

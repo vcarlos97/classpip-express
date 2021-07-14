@@ -8,19 +8,19 @@ import { IonicModule } from "@ionic/angular";
 import { JuegoVotacionRapidaPage } from "./juego-votacion-rapida.page";
 
 const routes: Routes = [
-	{
-		path: "",
-		component: JuegoVotacionRapidaPage
-	}
+  {
+    path: "",
+    component: JuegoVotacionRapidaPage,
+  },
 ];
 
 @NgModule({
-	imports: [
-		CommonModule,
-		FormsModule,
-		IonicModule,
-		RouterModule.forChild(routes)
-	],
-	declarations: [JuegoVotacionRapidaPage]
+  imports: [
+    CommonModule,
+    FormsModule,
+    IonicModule,
+    RouterModule.forChild(routes),
+  ],
+  declarations: [JuegoVotacionRapidaPage],
 })
 export class JuegoVotacionRapidaPageModule {}

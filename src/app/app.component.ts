@@ -6,12 +6,11 @@ import { StatusBar } from "@ionic-native/status-bar/ngx";
 import { Router } from "@angular/router";
 
 @Component({
-	selector: "app-root",
-	templateUrl: "app.component.html",
-	styleUrls: ["app.component.scss"]
+  selector: "app-root",
+  templateUrl: "app.component.html",
+  styleUrls: ["app.component.scss"],
 })
 export class AppComponent {
-
   navigate: any;
 
   constructor(
@@ -19,19 +18,19 @@ export class AppComponent {
     public navCtrl: NavController,
     private platform: Platform,
     private splashScreen: SplashScreen,
-    private statusBar: StatusBar
+    private statusBar: StatusBar,
   ) {
-  	this.initializeApp();
+    this.initializeApp();
   }
 
   initializeApp() {
-  	this.platform.ready().then(() => {
-  		this.statusBar.styleDefault();
-  		this.splashScreen.hide();
-  	});
+    this.platform.ready().then(() => {
+      this.statusBar.styleDefault();
+      this.splashScreen.hide();
+    });
   }
 
   GoOut() {
-  	this.route.navigateByUrl("/home");
+    this.route.navigateByUrl("/home");
   }
 }

@@ -10,22 +10,22 @@ import { MatInputModule, MatRadioModule } from "@angular/material";
 import { JuegoCuestionarioSatisfaccionPage } from "./juego-cuestionario-satisfaccion.page";
 
 const routes: Routes = [
-	{
-		path: "",
-		component: JuegoCuestionarioSatisfaccionPage
-	}
+  {
+    path: "",
+    component: JuegoCuestionarioSatisfaccionPage,
+  },
 ];
 
 @NgModule({
-	imports: [
-		CommonModule,
-		FormsModule,
-		IonicModule,
-		MatStepperModule,
-		MatRadioModule,
-		MatInputModule,
-		RouterModule.forChild(routes)
-	],
-	declarations: [JuegoCuestionarioSatisfaccionPage]
+  imports: [
+    CommonModule,
+    FormsModule,
+    IonicModule,
+    MatStepperModule,
+    MatRadioModule,
+    MatInputModule,
+    RouterModule.forChild(routes),
+  ],
+  declarations: [JuegoCuestionarioSatisfaccionPage],
 })
 export class JuegoCuestionarioSatisfaccionPageModule {}

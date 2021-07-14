@@ -9,18 +9,18 @@ import { HomePage } from "./home.page";
 import { MatExpansionModule } from "@angular/material/expansion";
 
 @NgModule({
-	imports: [
-		MatExpansionModule,
-		CommonModule,
-		FormsModule,
-		IonicModule,
-		RouterModule.forChild([
-			{
-				path: "",
-				component: HomePage
-			}
-		])
-	],
-	declarations: [HomePage]
+  imports: [
+    MatExpansionModule,
+    CommonModule,
+    FormsModule,
+    IonicModule,
+    RouterModule.forChild([
+      {
+        path: "",
+        component: HomePage,
+      },
+    ]),
+  ],
+  declarations: [HomePage],
 })
-export class HomePageModule { }
+export class HomePageModule {}

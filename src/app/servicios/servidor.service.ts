@@ -2,15 +2,15 @@ import { Injectable } from "@angular/core";
 import { Socket } from "ngx-socket-io";
 
 @Injectable({
-	providedIn: "root"
+  providedIn: "root",
 })
 export class ServidorService {
   private servidor: Socket;
-  constructor() { }
+  constructor() {}
   Conectar() {
-  	this.servidor.connect();
+    this.servidor.connect();
   }
   Emitir(mensaje: string, info: any) {
-  	this.servidor.emit(mensaje, info);
+    this.servidor.emit(mensaje, info);
   }
 }
